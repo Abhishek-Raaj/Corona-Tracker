@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link  rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+    <h1 class="h">Coronavirous Datewise case in {{obj2.name}}</h1>
+    <table>
+        <tr>
+            <th>Date</th>
+             <th class="y">Confirmed</th>
+              <th>Active</th>
+               <th class="g">Recovered</th>
+                <th class="r">Deaths</th>
+        </tr>
+    
+ {{#each obj2.data}}
+ <tr>
+           <td>{{this.Date}}</td>
+           <td class="y">{{this.Confirmed}}</td>
+             <td>{{this.Active}}</td>
+               <td class="g">{{this.Recovered}}</td>
+                <td class="r">{{this.Deaths}}</td>
+                  </tr>
+  {{/each}}
+
+  </table>
+</body>
+</html>
